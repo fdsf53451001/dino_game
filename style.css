@@ -1,0 +1,50 @@
+.dino-game{
+    margin:100px 100px;
+    border: solid black;
+    height:200px;
+    width:600px;
+}
+.dino{
+    width: 60px;
+    height: 70px;
+    background-image: url(dino.png);
+    background-size: 60px 70px;
+    position: absolute;
+    top:290px;
+    left:120px;
+}
+.catcus{
+    width: 25px;
+    height: 50px;
+    background-image: url(catcus.png);
+    background-size: 25px 50px;
+    position:absolute;
+    top:310px;
+    left:650px;
+    animation: catcus_move linear 1.3s;
+}
+
+.jump{
+    animation: dino_jump linear 0.4s;
+}
+
+@keyframes dino_jump{
+    0%{
+        top:290px;
+    }
+    50%{
+        top:200px;
+    }
+    100%{
+        top:290px;
+    }
+}
+
+@keyframes catcus_move{
+    0%{
+        left:650px;
+    }
+    100%{
+        left:100px;
+    }
+}
