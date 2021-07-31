@@ -26,7 +26,15 @@ function set_gameover(){
     if(catcus_program_id && game_program_id){
         game_status = 2;
         clearInterval(game_program_id);
+        $("#point").html("GameOver! Point="+point);
     }
+}
+
+function get_point(){
+    if(game_status==1){
+        point += 1;
+        $("#point").html(point);
+    }    
 }
 
 function initial_game(){
@@ -34,6 +42,7 @@ function initial_game(){
     point = 0;
     catcus_program_id = genCatcus();
     game_program_id = setInterval(game_tick,30);
+    $("#point").html("Start!");
 }
 
 document.addEventListener('keypress',on_button_click);

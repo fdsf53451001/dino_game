@@ -5,23 +5,27 @@
     width:600px;
 }
 .dino{
-    width: 60px;
-    height: 70px;
-    background-image: url(dino.png);
-    background-size: 60px 70px;
+    width: 70px;
+    height: 80px;
+    background-image: url(kiara.png);
+    background-size: 70px 80px;
     position: absolute;
-    top:290px;
+    top:280px;
     left:120px;
 }
 .catcus{
     width: 25px;
-    height: 50px;
-    background-image: url(catcus.png);
-    background-size: 25px 50px;
+    height: 45px;
+    background-image: url(KFP_chicken.png);
+    background-size: 25px 45px;
     position:absolute;
-    top:310px;
+    top:320px;
     left:650px;
     animation: catcus_move linear 1.3s;
+}
+
+#point{
+    text-align: center;
 }
 
 .jump{
@@ -30,13 +34,13 @@
 
 @keyframes dino_jump{
     0%{
-        top:290px;
+        top:280px;
     }
     50%{
-        top:200px;
+        top:190px;
     }
     100%{
-        top:290px;
+        top:280px;
     }
 }
 

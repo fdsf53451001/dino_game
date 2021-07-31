@@ -11,7 +11,7 @@ function genCatcus(){
     $(".dino-game").append('<div class="catcus" id="catcus'+catcus_id+'"> </div>');
     setTimeout(function(remove_id){
         $("#catcus"+remove_id).remove();
-        point += 1;
+        get_point();
     },1250,catcus_id);
 
     catcus_id+=1;
